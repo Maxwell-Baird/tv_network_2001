@@ -46,4 +46,16 @@ class Network
     by_actor
   end
 
+
+  def prolific_actors
+    prolific = shows_by_actor
+    actors = []
+    prolific.each_key do |key|
+      if prolific[key].length > 1
+        actors << key
+      end
+    end
+    actors
+  end
+
 end
