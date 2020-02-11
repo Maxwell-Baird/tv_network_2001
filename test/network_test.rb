@@ -70,6 +70,7 @@ class NetworkTest < Minitest::Test
     nbc.add_show(parks_and_rec)
     mitch = Character.new({name: "Mitch Buchannon", actor: "David Hasselhoff", salary: 1_200_000})
     baywatch = Show.new("Baywatch", "Gregory Bonann", [mitch])
+    nbc.add_show(baywatch)
     shows_by = {
       "David Hasselhoff" => [knight_rider, baywatch],
       "William Daniels" => [knight_rider],
