@@ -8,4 +8,8 @@ class Character
   def name
     @attributes[:name]
   end
+
+  def actor
+    @attributes[:actor]
+  end
 end
