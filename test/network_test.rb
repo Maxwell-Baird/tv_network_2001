@@ -40,6 +40,6 @@ class NetworkTest < Minitest::Test
     parks_and_rec = Show.new("Parks and Recreation", "Michael Shur & Greg Daniels", [leslie_knope, ron_swanson])
     nbc.add_show(knight_rider)
     nbc.add_show(parks_and_rec)
-    assert_equal kitt, nbc.main_characters
+    assert_equal [kitt], nbc.main_characters
   end
 end
