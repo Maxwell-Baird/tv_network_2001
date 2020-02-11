@@ -9,4 +9,8 @@ class Show
     @creator = creator_parameter
     @characters = actors_parameter
   end
+
+  def total_salary
+    total_salary = @characters.sum {|actor|actor.salary}
+  end
 end
