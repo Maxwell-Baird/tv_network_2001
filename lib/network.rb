@@ -9,4 +9,8 @@ class Network
     @name = name_parameter
     @shows = []
   end
+
+  def add_show(show)
+    @shows << show
+  end
 end

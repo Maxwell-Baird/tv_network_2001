@@ -18,6 +18,7 @@ class NetworkTest < Minitest::Test
   end
 
   def test_network_shows_added
+    nbc = Network.new("NBC")
     michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
     kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
     knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
