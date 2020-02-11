@@ -32,4 +32,18 @@ class Network
     by_show
   end
 
+  def shows_by_actor
+    by_actor = Hash.new
+    @shows.each do |show|
+      show.characters.each do |character|
+        if by_actor[character.actor] == nil
+          by_actor[character.actor] = [show]
+        else
+          by_actor[character.actor] << show
+        end
+      end
+    end
+    by_actor
+  end
+
 end
